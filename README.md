@@ -1,2 +1,2 @@
 # Assignment
-pylint pytest
+pylint_and_pytest
