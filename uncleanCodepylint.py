@@ -1,29 +1,21 @@
-import string;
-
-shift = 3
-choice = input("would you like to encode or decode?")
-word = input("Please enter text")
-letters = string.ascii_letters + string.punctuation + string.digits
-encoded = ''
-if choice == "encode":
-    for letter in word:
+import string
+SHIFT = 3
+CHOICE = input("would you like to encode or decode?")
+WORD = input("Please enter text")
+LETTERS = string.ascii_letters + string.punctuation + string.digits
+ENCODED = ''
+if CHOICE == "ENCODED":
+    for letter in WORD:
         if letter == ' ':
-            encoded = encoded + ' '
+            ENCODED = ENCODED + ' '
         else:
-            x = letters.index(letter) + shift
-            encoded = encoded + letters[x]
-if choice == "decode":
-    for letter in word:
+            x = LETTERS.index(letter) + SHIFT
+            ENCODED = ENCODED + LETTERS[x]
+if CHOICE == "decode":
+    for letter in WORD:
         if letter == ' ':
-            encoded = encoded + ' '
+            ENCODED = ENCODED + ' '
         else:
-            x = letters.index(letter) - shift
-            encoded = encoded + letters[x]
-
-print(encoded)
-
-
-####
-/**
-Source : http://pylint.pycqa.org/en/latest/tutorial.html
-**/        
+            x = LETTERS.index(letter) - SHIFT
+            ENCODED = ENCODED + LETTERS[x]
+print(ENCODED)  
