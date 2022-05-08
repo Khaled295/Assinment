@@ -1,6 +1,5 @@
 "hello"
 import string
-
 SHIFT = 3
 CHOICE = input("would you like to encode or decode")
 WORD = input("Please enter text")
