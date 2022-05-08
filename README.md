@@ -1,2 +1,2 @@
-# Assinment
+# Assignment
 pylint pytest
